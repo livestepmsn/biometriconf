@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* ocupa todo el espacio disponible */
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+    background-image: url("https://logincdn.msftauth.net/shared/5/images/fluent_web_light_2_145a07dcb971527a82b8.svg");
+background-size: cover;      /* la imagen cubre toda el área */
+background-position: center; /* centrada */
+background-repeat: no-repeat;
+    height: 100%;
+display: flex;
+  flex-direction: column;
+  }
+
+  .container {
+  flex: 1;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 32px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+
+  .logo svg {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  h1 {
+    margin: 8px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #242424;
+  }
+
+  .subtitle {
+    color: #777;
+    font-size: 14px;
+  }
+
+  h2#displayEmail {
+    font-size: 13px;
+    margin-bottom: 12px;
+    min-height: 20px;
+    color: #777;
+    word-break: break-all;
+  }
+
+  .field {
+    margin-bottom: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  
+
+  input {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border-color: #1a73e8;
+    outline: none;
+  }
+
+  .link {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f6cbd;
+    text-decoration: none;
+    margin-bottom: 35px;
+  }
+
+  .btn {
+    background: #0f6cbd;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .btn:hover {
+    background: #115ea3;
+  }
+
+  .footer-link {
+    display: block;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+.input-group {
+  position: relative;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.field {
+    margin-bottom: 20px;
+  }
+
+.input-group input {
+  width: 100%;
+  padding: 12px 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  background: transparent;
+  color: #1a1a1a;
+}
+
+/* Ocultar placeholder al hacer focus */
+.input-group input:focus::placeholder {
+  color: transparent;
+}
+
+.input-group input:focus {
+  border-top-color: #aaa;
+  border-left-color: #aaa;
+  border-right-color: #aaa;
+}
+
+/* Label inicialmente invisible */
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  opacity: 0;
+background-color: #fff; 
+  padding: 0 4px; /* espacio horizontal */
+}
+
+/* Label aparece al hacer focus */
+.input-group input:focus + label {
+  top: -8px;
+  left: 15px;
+  font-size: 12px;
+  color: #aaa;
+  opacity: 1;
+  background-color: 15px;
+}
+
+/* Línea inferior animada */
+.input-group .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #1a73e8;
+  transition: 0.2s ease all;
+}
+
+.input-group input:focus ~ .underline {
+  width: 100%;
+}
+
+
+
+.field {
+  position: relative;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  width: 100%;
+}
+.field input {
+  width: 100%;
+  padding: 12px 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  background: transparent;
+  color: #1a1a1a;
+}
+
+/* Ocultar placeholder al hacer focus */
+.field input:focus::placeholder {
+  color: transparent;
+}
+
+.field input:focus {
+  border-top-color: #aaa;
+  border-left-color: #aaa;
+  border-right-color: #aaa;
+}
+
+/* Label inicialmente invisible */
+.field label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  opacity: 0;
+background-color: #fff; 
+  padding: 0 4px; /* espacio horizontal */
+}
+
+/* Label aparece al hacer focus */
+.field input:focus + label {
+  top: -8px;
+  left: 15px;
+  font-size: 12px;
+  color: #aaa;
+  opacity: 1;
+  background-color: 15px;
+}
+
+/* Línea inferior animada */
+.field .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #1a73e8;
+  transition: 0.2s ease all;
+}
+
+.field input:focus ~ .underline {
+  width: 100%;
+}
+
+.footer {
+  background-color: transparent;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los <a> */
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #777; /* cambia el color según tu fondo */
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 0;
+  color: #777; /* opcional */
+  font-weight: 400;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+
+.imgcarga img {
+  width: 100%;
+}
+
+.imgerror img {
+  display: block; /* Required for margin: 0 auto to center an image */
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: #fff;
+  }
+
+  .container {
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: none;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 24px 16px;
+  }
+}
+
